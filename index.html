@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<!-- Top Navigation Bar -->
+
+<section class="navigation">
+  <div class="nav-container">
+    <div class="brand">
+      <a href="#!"><img src = "https://s3.ap-south-1.amazonaws.com/zo-static/website/img/zostel-logo.png" alt = "logo" height = "40px" width="auto" ></a>
+    </div>
+    <nav>
+      <div class="nav-mobile"><a id="navbar-toggle" href="#!"><span></span></a></div>
+      <ul class="nav-list">
+        <li>
+          <a href="#!">Hostels</a>
+          <ul class="navbar-dropdown">
+            <li>
+              <a href="#!">Dang</a>
+            </li>
+            <li>
+              <a href="#!">Kathmandu</a>
+            </li>
+            <li>
+              <a href="#!">Pokhara</a>
+            </li>
+            <li>
+              <a href="#!">Biratnagar</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#!">About</a>
+        </li>
+        <li>
+          <a href="#!">Services</a>
+          <ul class="navbar-dropdown">
+            <li>
+              <a href="#!">Sass</a>
+            </li>
+            <li>
+              <a href="#!">Less</a>
+            </li>
+            <li>
+              <a href="#!">Stylus</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#!">Portfolio</a>
+        </li>
+        <li>
+          <a href="#!">Category</a>
+          <ul class="navbar-dropdown">
+            <li>
+              <a href="#!">Sass</a>
+            </li>
+            <li>
+              <a href="#!">Less</a>
+            </li>
+            <li>
+              <a href="#!">Stylus</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#!">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
+
+<!--Loader -->
+
+<div class="overlay position-fixed top-0 w-100 h-100">
+   <div class="loader start-50 top-50 position-absolute"></div>
+</div>
+
+<!-- Carousel -->
+<section>
+  
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://img.cdn.zostel.com/cache/_1702bd3ab45e20acabe0c783694e8c73/4_1400x600.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://img.cdn.zostel.com/cache/_1702bd3ab45e20acabe0c783694e8c73/4_1400x600.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://img.cdn.zostel.com/cache/_1702bd3ab45e20acabe0c783694e8c73/4_1400x600.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
+
+</section>
+
+
+<!-- <script type="text/javascript" src = "script.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    // $(".overlay").show();
+    // $(".overlay").delay(1000).fadeOut(5000);
+    document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                  "body").style.visibility = "hidden";
+                document.querySelector(
+                  ".overlay").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                  ".overlay").style.display = "none";
+                document.querySelector(
+                  "body").style.visibility = "visible";
+            }
+        };
+
+
+  (function($) { 
+  $(function() { 
+
+    //  open and close nav 
+    $('#navbar-toggle').click(function() {
+      $('nav ul').toggleClass("responsive");
+    });
+
+
+    // Hamburger toggle
+    $('#navbar-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+
+
+    // If a link has a dropdown, add sub menu toggle.
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.navbar-dropdown').slideToggle("slow");
+
+      // Close dropdown when select another dropdown
+      $('.navbar-dropdown').not($(this).siblings()).hide("slow");
+      e.stopPropagation();
+    });
+
+
+    // Click outside the dropdown will remove the dropdown class
+    $('html').click(function() {
+      $('.navbar-dropdown').hide();
+    });
+  }); 
+})(jQuery); 
+</script>
+</body>
+</html>
