@@ -176,3 +176,239 @@ body{
  #navbar-toggle.active span:after {
      transform: rotate(-45deg);
 }
+
+.theme{
+    width: 600px;
+    z-index: -1;
+    background-image: url(https://html.merku.love/hosteller/img/index/hero.webp);
+    background-position: 100% 100%;
+
+}
+.theme-black{
+  width: 397px;
+}
+.login-div{
+    margin-top: 140px;
+    box-shadow: 3px 3px 20px 5px rgb(0 0 0 / 5%);
+}
+.auth-left{
+  border-color : #22222285 !important;
+}
+.auth-left img{
+  height: fit-content;
+}
+.login_title{
+  font-size: 52px!important;
+  color: #444;
+  font-weight: bolder !important;
+  font-family: Mulish,sans-serif;
+  line-height: 56px;
+}
+.label-captcha{
+  color: #707070;
+  font-size: 12px;
+}
+.label-captcha-link{
+  color: #337ab7;
+}
+.form-control{
+  color: #707070 !important;
+  height: 46px;
+}
+.form-check-input[type="checkbox"]{
+    bottom: 1px;
+    width: 24px;
+    height: 24px;
+    content: "";
+    border: 1px solid #bdbdbd;
+    cursor: pointer;
+} 
+.login_btn{
+    border: 0;
+    height: 46px;
+    background-image: linear-gradient(to left,#FF8F73,#F2547D) !important;
+}
+.line{
+  border-left:3px solid #F2547D;
+}
+.text{
+  font-family: Poppins;
+  font-weight: 600;
+}
+.text_options{
+  color: #707070;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.forgot-div{
+  font-size: 14px;
+}
+.lock-icon{
+  font-size: 12px;
+}
+.forgot-div a{
+  border-bottom: 1px solid #bdbdbd;
+  cursor: pointer;
+    color : #222;
+  text-decoration: none;
+}
+
+
+/************************************/
+.forgot-bg-img{
+  background: #00b1b1;
+}
+.forgot_title{
+  font-family: muli,sans-serif !important;
+  font-size: 22px;
+  color: #444;
+}
+.email-label-text{
+  font-family: Roboto !important;
+  font-size: 14px;
+  color: #444;
+}
+.email-reset-input{
+  height: auto !important;
+  font-family: muli,sans-serif !important;
+  font-size: 15px;
+  color: #707070;
+}
+.reset_btn{
+  font-family: muli,sans-serif !important;
+  font-size: 15px;
+  background : #3eacff;
+  border-color: #3eacff;
+}
+.reset_btn:hover,.reset_btn:focus{
+    background : #3eacff !important;
+  border-color: #3eacff !important; 
+}
+.login_text_href,.login_text_href:hover,.login_text_href:focus{
+  text-decoration: none;
+  color: #444;
+}
+.login_text_href{
+  border-bottom: 1px solid #bdbdbd;
+}
+.check-div{
+  width: 100%;
+}
+.check-label{
+  font-family: Poppins;
+  font-weight: 600;
+}
+.arrow{
+  font-size: 22px;
+}
+.dest-div{
+  margin-top: 15%;
+}
+.dest-text{
+  font-family: Mulish,sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.dest-outer-div{
+  background-image: linear-gradient(to right, #f7fafd, transparent);
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.media_label {
+    position: absolute;
+    height: 40px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #fff;
+    z-index: 10;
+    padding: 0 15px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: Mulish,sans-serif;
+    color: #235784;
+    top: 0;
+    right: 0;
+    border-radius: 8px 0 0 8px;
+}
+.media_label--pricing {
+    font-weight: 400;
+    font-family: OpenSans,sans-serif;
+    color: #2c3c4a;
+}
+.media_label {
+    bottom: 240px;
+    top: unset;
+}
+.hostel-room-text{
+  font-family: Poppins;
+  color: #000;
+}
+.description{
+  text-decoration: none;
+  font-family: Mulish,sans-serif;
+  font-weight: bold;
+  color: #FF8F73;
+  letter-spacing: 1px;
+}
+.description:hover,.description:focus{
+ color: #FF8F73;
+}
+.final-div{
+  background-image: linear-gradient(to left,#FF8F73,#F2547D) !important;
+}
+.final-text{
+  font-family: Mulish,sans-serif;
+}
+.final-sub-text{
+  font-family: Mulish,sans-serif;
+  font-size : 18px;
+}
+.discount-div{
+  border-left: 3px solid #fff;
+}
+.btn-choose{
+  font-family: Mulish,sans-serif;
+  background: #fff;
+  color: #FF8F73;
+  font-weight: bold;
+}
+.btn-choose:hover{
+  color: #FF8F73;
+}
+@media only screen and (max-width: 767px){
+  .auth-left{
+    display: none !important;
+  }
+  .forgot-bg-img{
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 576px){
+  .theme,.theme-black{
+    width: 100%;
+  }
+  .login-div{
+    margin: 80px auto;
+  }
+  .forgot-section{
+     margin: auto;  
+  }
+  .dest-div{
+    margin-top: 5%;
+  }
+}
+
+
+
+
