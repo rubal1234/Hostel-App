@@ -17,58 +17,7 @@
 
 <!-- Top Navigation Bar -->
 
-<section class="navigation">
-  <div class="nav-container">
-    <div class="brand">
-      <a href="#!"><img src = "https://s3.ap-south-1.amazonaws.com/zo-static/website/img/zostel-logo.png" alt = "logo" height = "40px" width="auto" ></a>
-    </div>
-    <nav>
-      <div class="nav-mobile"><a id="navbar-toggle" href="#!"><span></span></a></div>
-      <ul class="nav-list">
-        <li>
-          <a href="#!">Home</a>
-          <!-- <ul class="navbar-dropdown">
-            <li>
-              <a href="#!">Dang</a>
-            </li>
-            <li>
-              <a href="#!">Kathmandu</a>
-            </li>
-            <li>
-              <a href="#!">Pokhara</a>
-            </li>
-            <li>
-              <a href="#!">Biratnagar</a>
-            </li>
-          </ul> -->
-        </li>
-        <li>
-          <a href="#!">About</a>
-        </li>
-        <li>
-          <a href="#!">Rooms</a>
-         <!--  <ul class="navbar-dropdown">
-            <li>
-              <a href="#!">Sass</a>
-            </li>
-            <li>
-              <a href="#!">Less</a>
-            </li>
-            <li>
-              <a href="#!">Stylus</a>
-            </li>
-          </ul> -->
-        </li>
-        <li>
-          <a href="#!">Gallery</a>
-        </li>
-        <li>
-          <a href="#!">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</section>
+<section class="navigation"></section>
 
 <!--Loader -->
 
@@ -83,32 +32,54 @@
 
   <div class="container mb-3">
     <div class="row">
-      <div class="col-xl-9 col-lg-12 col-sm-12 col-11 p-4 login-div bg-white rounded">
+      <div class="col-xl-11 col-lg-12 col-sm-12 col-11 p-4 login-div bg-white rounded">
         <div class="row">
           <div class="col">
-            <form class="px-sm-5 py-sm-5">
+            <form class="px-sm-4 py-sm-5">
               <div class="pe-5">
                 <label class="form-label login_title fw-bold">Hosteller amazing hostel for the free spirited traveler</label>
               </div>
 
               <div class="hero_main-content d-flex mt-3"><span class="line aos-init aos-animate ps-3" data-aos="fade-up" data-aos-delay="50"></span><p class="text aos-init aos-animate pe-5" data-aos="fade-up" data-aos-delay="100">Egestas pretium aenean pharetra magna ac. Et tortor consequat id porta nibh venenatis cras sed. Vel turpis nunc eget lorem dolor sed</p></div>
               
-              <div class="d-md-flex align-items-center mt-4">
-                <div class="d-sm-flex ">
-                  <div class=" check-div">
-                    <label class="check-label">Check in </label>
+              <div class="d-flex align-items-center mt-4">
+                <div class="search-div">
+                  <input type="text" name="" class="form-control search_input" placeholder="Enter city name or district">
+                </div>
+                <div class="ps-3 find-div">
+                    <button class="btn btn-primary login_btn w-100 find_btn">Find</button>
+                </div>
+              </div>
 
-                    <input type="date" name="" class="form-control py-2">
-                  </div>
-
-                  <div class=" ps-sm-3 mt-3 mt-sm-0 check-div">
-                    <label class="check-label">Check out</label>
-                    <input type="date" name="" class="form-control py-2">
+              <div class="row">
+                <div class="col-4 col-sm-3 col-lg-2">
+                  <div class="city-div text-center">
+                    <a href = "city.html"><img src = "Kathmandu.jpg" class="city-image rounded-circle"></a>
+                    <p>Kathmandu</p>
                   </div>
                 </div>
-                <div class="ps-md-3 w-100 mt-3">
-                    <button class="btn btn-primary login_btn w-100">Find</button>
-                </div>
+
+                <div class="col-4 col-sm-3 col-lg-2">
+                  <div class="city-div text-center">
+                    <img src = "pokhara.jpg" class="city-image rounded-circle">
+                    <p>Pokhara</p>
+                  </div>
+                </div> 
+
+                <div class="col-4 col-sm-3 col-lg-2">
+                  <div class="city-div text-center">
+                    <img src = "dang.jpg" class="city-image rounded-circle">
+                    <p>Dang</p>
+                  </div>
+                </div> 
+
+                <div class="col-4 col-sm-3 col-lg-2">
+                  <div class="city-div text-center">
+                    <img src = "butwal.jpg" class="city-image rounded-circle">
+                    <p>Butwal</p>
+                  </div>
+                </div> 
+
               </div>
             </form>
           </div>
@@ -233,7 +204,7 @@
     <div class="row">
       <div class="col-12 col-md-6 mt-5">
         <div class="h-100">
-          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div id="carouselExampleSlidesOnly" class="carousel slide review" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="https://html.merku.love/hosteller/img/index/slide03.webp" class="d-block carousel-image" alt="...">
@@ -367,78 +338,15 @@
           </div>
         </div>
       </div>
-
-      <!-- <div class="col-12 col-xl-6">
-        <form class="p-5 mx-5 form-div rounded">
-          <div class="form-group">
-            <label>Name*</label>
-            <input type="text" name="" class="form-control" placeholder="Your Name">
-          </div>
-          <div class="form-group mt-4">
-            <label>Phone*</label>
-            <input type="number" name="" class="form-control" placeholder="Your Number"> 
-          </div>
-          <div class="form-group mt-4">
-            <label>Email*</label>
-            <input type="email" name="" class="form-control" placeholder="Your Email"> 
-          </div>
-          <div class="mt-4">
-            <input type="submit" name="" value="Submit" class="btn login_btn text-white">
-          </div>
-          
-        </form>
-      </div> -->
     </div>
   </div>
 </section>
 
 
-<section class="footer spacing">
-  <div class="container">
-    <div class="row">
-      <div class="col-6 col-sm-4 py-5">
-        <h1 class="footer-header text-white">Quick links</h1>
-        <p class="footer-text mt-4"><a href = "#" class="text-white">Home</a></p>
-        <p class="footer-text"><a href = "#" class="text-white">About</a></p>
-        <p class="footer-text"><a href = "#" class="text-white">Rooms</a></p>
-        <p class="footer-text"><a href = "#" class="text-white">Contact</a></p>
-      </div>
-      <div class="col-6 col-sm-4 py-5 ps-5">
-        <h1 class="footer-header text-white">Follow us</h1>
-        <p class="footer-text mt-4"><a href = "#" class="text-white"><i class="fab fa-facebook-f"></i></a></p>
-        <p class="footer-text"><a href = "#" class="text-white"><i class="fab fa-instagram"></i></a></p>
-        <p class="footer-text"><a href = "#" class="text-white"><i class="fab fa-twitter"></i></a></p>
-        <p class="footer-text"><a href = "#" class="text-white"><i class="fab fa-whatsapp"></i></a></p>
-      </div>
-      <div class="col-6 col-sm-4 py-5">
-        <h1 class="footer-header text-white">Contact us</h1>
-        <div class="mt-4 d-flex">
-          <i class="fa fa-map-marker text-white pt-1" aria-hidden="true"></i>
-          <p class="text-white ps-3">Ghorahi,Dang Nepal</p>
-        </div>
-
-        <div class="mt-4 d-flex">
-          <i class="fas fa-phone pt-1 text-white"></i>
-          <div>
-            <p class="text-white ps-3 mb-auto">9849271567</p>
-            <p class="text-white ps-3">9809563464</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<section class="footer spacing"></section>
 
 
-<section class="bg-dark">
-  <div class="container">
-    <div class="row">
-      <div class="col py-3">
-        <p class="text-white mb-auto">&copy; All rights reserved Copyrights 2021</p>
-      </div>
-    </div>
-  </div>
-</section>
+<section class="footer-bottom bg-dark"></section>
 
 
 
@@ -446,12 +354,11 @@
 
 
 <!-- <script type="text/javascript" src = "script.js"></script> -->
-
+<script type="text/javascript" src = "script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 <script type="text/javascript">
-    // $(".overlay").show();
-    // $(".overlay").delay(1000).fadeOut(5000);
-    document.onreadystatechange = function() {
+ document.onreadystatechange = function() {
             if (document.readyState !== "complete") {
                 document.querySelector(
                   "body").style.visibility = "hidden";
@@ -463,51 +370,7 @@
                 document.querySelector(
                   "body").style.visibility = "visible";
             }
-        };
-
-  (function($) { 
-  $(function() { 
-
-    //  open and close nav 
-    $('#navbar-toggle').click(function() {
-      $('nav ul').toggleClass("responsive");
-    });
-
-
-    // Hamburger toggle
-    $('#navbar-toggle').on('click', function() {
-      this.classList.toggle('active');
-    });
-
-
-    // If a link has a dropdown, add sub menu toggle.
-    $('nav ul li a:not(:only-child)').click(function(e) {
-      $(this).siblings('.navbar-dropdown').slideToggle("slow");
-
-      // Close dropdown when select another dropdown
-      $('.navbar-dropdown').not($(this).siblings()).hide("slow");
-      e.stopPropagation();
-    });
-
-
-    // Click outside the dropdown will remove the dropdown class
-    $('html').click(function() {
-      $('.navbar-dropdown').hide();
-    });
-  }); 
-})(jQuery); 
-
-
-    function showImg(e){
-      $(".modal").show();
-      var imgSrc = e.src
-      var modalImg = document.getElementById("img01");
-      modalImg.src = imgSrc;
-    }
-
-  $(document).on("click",".close",function(e){
-    $(".modal").hide();
-  })
+};
 </script>
 </body>
 </html>
