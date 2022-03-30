@@ -74,8 +74,12 @@ body{
      padding-left: 4px;
      content: ' \025BE';
 }
+nav ul li:last-child a:hover{
+    background: #fff;
+  }
  nav ul li ul li {
      min-width: 190px;
+}
 }
  nav ul li ul li a {
      padding: 15px;
@@ -445,7 +449,6 @@ body{
   font-family: Poppins;
   font-size: 16px;
   color: #444;
-  word-break: break-word;
 }
 .carousel-image{
   width: 85%;
@@ -465,6 +468,36 @@ body{
 }
 .spacing{
   margin-top: 10%;
+}
+#myModal2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0px;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+}
+
+ #myModal2 .modal-content {
+  top: 10px;
+  background-color: #fefefe;
+  margin: auto;
+  border: 1px solid #888;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+}
+@keyframes slideIn {
+  from {top: 0px; opacity: 0}
+  to {top: 10px; opacity: 1}
+}
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
 }
 /* The Modal (background) */
 #myModal {
@@ -591,6 +624,116 @@ body{
 .pg_media_label{
   bottom: 330px;
 }
+.avatar {
+  vertical-align: middle;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.item-div{
+   margin-left: 16px;
+   width: 242px;
+   height: 35px;
+   align-items: center;
+   color: #B8B7B7;
+}
+.item-div i{
+  margin-left: 15px;
+}
+.item-div span{
+  font-family: Roboto;
+  margin-left: 12px;
+}
+.item-div:nth-child(2){
+  width: 252px;
+  height: 48px;
+  color: #fff;
+  background : #F3BB03;
+  border-radius: 16px;
+  line-height: 48px;
+}
+.main-content{
+  margin-top: 76px;
+}
+.account-title{
+  font-size: 26px;
+  font: normal normal bold 26px/34px Roboto;
+  color: #000;
+}
+.account-img{
+  margin-top: -16px;
+  width: 80px;
+}
+.setting-div{
+  box-shadow: 0px 3px 6px #00000029;
+}
+.setting-div ul{
+  list-style: none;
+  padding: 0;
+}
+.setting-div ul li{
+  font-size: 12px;
+  font-family: Roboto;
+  padding-top: 6px;
+  padding-left: 17px;
+  cursor: pointer;
+}
+.current{
+  color: #F2547D !important;
+  border-left: 5px solid #F2547D;
+  padding-left: 12px !important
+}
+.profile-text{
+  font: normal normal 600 18px/24px Roboto;
+}
+.label_text{
+  font-size: 13px;
+  color: #6A6A6A;
+  margin-top: -12px;
+  margin-left: 12px;
+  font-family: Poppins,sans-serif;
+  z-index: 1;
+}
+.input_text{
+  border-radius: 8px !important;
+}
+.icon_style{
+  margin-top: -29px !important;
+  margin-right: 18px;
+  color: #707070;
+}
+.input_text:focus{
+  box-shadow: none !important;
+  border : 1px solid #F2547D;
+}
+.form-group:focus-within .label_text{
+  color: #F2547D;
+}
+.form-group:focus-within .icon_style{
+  color: #F2547D;
+}
+
+.sign-in{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.login_input{
+  border-radius: 0px !important;
+  border-bottom: 2px solid #235784 !important;
+}
+.login_input:focus{
+  box-shadow: none;
+}
+.forgot{
+  cursor: pointer;
+  text-decoration: underline;
+}
+.image-upload img{
+  cursor: pointer;
+}
+.image-upload>input {
+  display: none;
+}
 @media only screen and (max-width: 1200px){
   .gallery-img{
     height: 210px;
@@ -621,6 +764,9 @@ body{
    .find-div{
     width: 30%;
    }
+   .account-img{
+    width: auto;
+  }
 }
 
 @media only screen and (max-width: 576px){
