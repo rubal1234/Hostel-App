@@ -734,6 +734,10 @@ nav ul li:last-child a:hover{
 .image-upload>input {
   display: none;
 }
+.map{
+  width:85%;
+  height:450px;
+}
 @media only screen and (max-width: 1200px){
   .gallery-img{
     height: 210px;
@@ -744,6 +748,11 @@ nav ul li:last-child a:hover{
   .gallery-img{
     height: 150px;
   }
+  .map{
+    width: 100%;
+  }
+
+}
 
 @media only screen and (max-width: 767px){
   .auth-left{
@@ -766,6 +775,9 @@ nav ul li:last-child a:hover{
    }
    .account-img{
     width: auto;
+  }
+  .carousel-inner-div span,p{
+    word-break: break-all;
   }
 }
 
