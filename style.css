@@ -5,6 +5,9 @@ body{
      padding: 0;
      font-family: 'Roboto', sans-serif;
 }
+a{
+  text-decoration: none;
+}
 .form-control{
   font-family: 'Poppins';
   }
@@ -70,10 +73,10 @@ body{
      color: #ffffff;
 }
 
- nav ul li a:not(:only-child):after, nav ul li a:visited:not(:only-child):after {
+/* nav ul li a:not(:only-child):after, nav ul li a:visited:not(:only-child):after {
      padding-left: 4px;
      content: ' \025BE';
-}
+}*/
 nav ul li:last-child a:hover{
     background: #fff;
   }
@@ -737,6 +740,54 @@ nav ul li:last-child a:hover{
 .map{
   width:85%;
   height:450px;
+}
+.contact-title{
+  font-family: 'Mulish';
+}
+.contact-title {
+    font-weight: 300;
+    display: inline-block;
+    padding-bottom: 5px;
+    position: relative;
+}
+.contact-title:before{
+    content: "";
+    position: absolute;
+    width: 45%;
+    height: 1px;
+    bottom: -16px;
+    left: 0%;
+    border-bottom: 4px solid #F2547D;
+}
+.icon-div{
+    width: 50px;
+    height: 50px;
+    background: #235784;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 50%;
+}
+.address-div,.phone-div,.email-div{
+  display: -webkit-box;
+}
+.icon-div i{
+  font-size: 25px;
+}
+.contact-text{
+  font-family: 'Mulish';
+}
+.form-label{
+  font-family: 'Poppins';
+  font-weight: 600;
+}
+.form-section{
+  width: 50%;
+}
+.mob-profile:hover{
+  background: #2581DC !important;
+  color: #ffffff !important;
 }
 @media only screen and (max-width: 1200px){
   .gallery-img{
