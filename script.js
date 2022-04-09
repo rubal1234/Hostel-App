@@ -17,6 +17,7 @@
      e.stopPropagation();
   })
 
+
   $(document).on("click",".sign-in",function(e){
     $(".modal-header").remove();
     $(".modal-body").remove();
@@ -60,6 +61,7 @@
     var btn = '<button type="button" class="btn login_btn text-white px-5">Submit</button>';
     $(".modal-footer").append(btn);
   })
+
     
 
  function loading() {
@@ -81,6 +83,10 @@ $(document).on("click",".btn-close",function(e){
   $(".modal").hide();
 })
 
+$(document).on("click",".apply",function(e){
+  $(".modal").hide();
+})
+
 $(function(){
   $(".navigation").load("nav.html");
 });
@@ -91,4 +97,41 @@ $(function(){
 
 $(function(){
   $(".footer-bottom").load("footer-bottom.html");
+});
+
+$(document).on("click","#details",function(e){
+  location.href = "details.html";
+})
+
+$(document).on("click",".city-div",function(e){
+  location.href = "city.html";
+})
+
+
+  $('.slick-carousel').slick({
+  infinite: true,
+  slidesToShow: 3, // Shows a three slides at a time
+  slidesToScroll: 1, // When you click an arrow, it scrolls 1 slide at a time
+  arrows: true, // Adds arrows to sides of slider
+  dots: true,
+  autoplay : true,
+  autoplaySpeed: 5000,
+  responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                infinite: true,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 991,
+            settings: {
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll:1
+            }
+        },
+  ]
 });
